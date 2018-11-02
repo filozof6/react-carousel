@@ -1,14 +1,18 @@
 import React from "react";
 import Image from "./Image";
+import ReactCSSTransitionGroup from 'react-transition-group';
 
 class ImagesContainer extends React.Component {
 
   render() {
+    var listItems = this.props.images.map((image) =>
+      <Image value={image.value} key={image.key} className="img-normal" />
+    );
+
     return (
-      <div className="component-arrows">
-        <Image value="1" className="img-normal" />
-        <Image value="2" className="img-center" />
-        <Image value="3" className="img-normal" />
+      <div className="component-images">
+        <span className="helper"></span>
+          {listItems}
       </div>
     );
   }

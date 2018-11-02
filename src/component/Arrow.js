@@ -1,18 +1,10 @@
 import React from "react";
 
 class Arrow extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-  }
 
   render() {
     return (
-      <a className="component-arrow">
+      <a className="component-arrow" onClick={() =>this.props.switchElement(this.props.images, this.props.direction)}>
         {this.props.anchorText}
       </a>
     );

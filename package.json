@@ -26,14 +26,21 @@
   },
   "homepage": "https://github.com/filozof6/react-carousel#readme",
   "dependencies": {
+    "less": "^3.8.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "^2.1.1"
+    "react-scripts": "^2.1.1",
+    "react-transition-group": "^1.2.1"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.1"
+  }
 }
