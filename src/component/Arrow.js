@@ -4,9 +4,9 @@ class Arrow extends React.Component {
 
   render() {
     return (
-      <a className="component-arrow" onClick={() =>this.props.switchElement(this.props.images, this.props.direction)}>
+      <button className="component-arrow" onClick={() =>this.props.switchElement(this.props.images, this.props.direction)}>
         {this.props.anchorText}
-      </a>
+      </button>
     );
   }
 }

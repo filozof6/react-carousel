@@ -4,7 +4,7 @@ class ImagesContainer extends React.Component {
 
   render() {
     return (
-      <img src={this.props.value} className={this.props.className} />
+      <img src={this.props.value} id={this.props.key} className={this.props.className} />
     );
   }
 }
