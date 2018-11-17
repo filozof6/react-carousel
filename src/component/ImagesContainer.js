@@ -8,13 +8,9 @@ import ReactDOM from "react-dom";
 class ImagesContainer extends React.Component {
 
   render() {
-    console.log(CSSTransition);
     var updatedRefs = [];
-
     var middleIndex = this.props.images.length / 2 - 0.5;
-      console.log("this.props.images");
-      console.log(middleIndex)
-    var listItems = this.props.images.map((image, i) =>      
+    var listItems = this.props.images.map((image, i) =>
         <Image value={image.value} key={image.key} className={i===middleIndex ? "img-center" : "img-normal"}  direction={this.props.direction} />
     );
 
